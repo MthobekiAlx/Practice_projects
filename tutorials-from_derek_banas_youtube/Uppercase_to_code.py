@@ -13,7 +13,7 @@ print("Secret message is: ", secret_string) #prints the secret message in code
 #cycle through each character code 2 numbers at a time since the assigned values come in pairs from 65-90 and we need to seperate them back pairs
 samp_string = ""
 for i in range(0, len(secret_string)-1, 2):
-    char_code = secret_string[i] + secret_string[i+1] #get the 1st and 2nd numbers of ecah respective pair from code
+    char_code = secret_string[i] + secret_string[i+1] #get the 1st and 2nd numbers of each respective pair from code
     samp_string += chr(int(char_code)) #convert code back to the string message
 
 print("The original message is: ", samp_string)
