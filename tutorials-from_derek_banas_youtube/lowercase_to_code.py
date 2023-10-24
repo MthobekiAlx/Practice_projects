@@ -16,3 +16,5 @@ for i in range(0, len(secret_message)-1, 3):
     lower_string += chr(int(char_code)) #convert code back to the string message
 
 print("The original message is: ", lower_string)
+
+#wrong code cause a to some other alphabet is out of ramge since its defined by three and not my pairs
