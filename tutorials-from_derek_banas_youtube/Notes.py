@@ -23,3 +23,34 @@ for i in a_list2:
 print("How many is :", rand_string.count("is"))
 print("where is string :", rand_string.find("string"))
 print(rand_string.replace(" a ", " a kind of "))
+
+#more notes
+letter_z = "z"
+num_3 = "3"
+a_space = " "
+num4 = "3.14"
+    #operations
+print("Is z a letter or a number: ", letter_z.isalnum())
+print("Is z a letter: ", letter_z.isalpha())
+print("Is 3 a number: ", num_3.isdigit())
+print("Is z a lower: ", letter_z.islower())
+print("Is z a uppercase: ", letter_z.isupper())
+print("Is space a space: ", a_space.isspace())
+
+def isfloat(str_val): #its a function defination meaning that we created a function so as to make the code easier to understand as opposed to calling it again and again
+    try:
+        float(str_val)
+        return True
+    except ValueError:
+        return False # from try to except is all part of exception handling as to check whether set input is true or not
+print("is pi a float: ", isfloat(num4))
+
+word = "Wrong"
+if word.isupper():
+    print("true")
+else:
+    print("false")
+
+
+
+
