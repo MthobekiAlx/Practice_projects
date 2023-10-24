@@ -6,11 +6,11 @@ string_accro = string_accro.upper()
 print(string_accro)
 
 #convert the tring into a list
-list = string_accro.split
-for i in list:
-    print(i)
+a_list1 = string_accro.split()
 
 #cycle through the list
-
+for word in a_list1:
+    print(word[0], end="")
 
 #get the 1st letter of the word and eliminate new line
+print()
