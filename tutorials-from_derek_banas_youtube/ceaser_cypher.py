@@ -32,6 +32,10 @@ if ceaser_string.isupper():
             for i in range(0, len(new_cstring)-1, 2):
                 char_code = new_cstring[i] + new_cstring[i+1]
                 ceaser_string += chr(int(char_code))
+#I think that I should do one for lower using islower and then do one for both so the second one should be an elif statement
+elif ceaser_string.islower():
+    #I think that the problem is that the lower case subtracts a number then I'll have to make it work for the shift_num range
+
 else: #works for both upper and lower and the combination of 
     if operator == "+" and 1 <= shift_num <=26:
         for char in ceaser_string:
