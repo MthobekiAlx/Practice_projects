@@ -35,11 +35,11 @@ if ceaser_string.isupper():
 #I think that I should do one for lower using islower and then do one for both so the second one should be an elif statement
 elif ceaser_string.islower():
     #I think that the problem is that the lower case subtracts a number then I'll have to make it work for the shift_num range
-
+    #so I will do one for lower case letters only and run it
 else: #works for both upper and lower and the combination of 
-    if operator == "+" and 1 <= shift_num <=26:
+    if operator == "+" and 1 <= shift_num <=26: #I will have to change the shift range back to 1-12 since it covers the entire range
         for char in ceaser_string:
-            secret_cstring += str(ord(char) -22)
+            secret_cstring += str(ord(char) -22) #get a number that puts it back and shift it by max 12
             num = secret_cstring
             num = int(num)
             if operator == "+" and 1 <= shift_num <= 26:
@@ -50,7 +50,7 @@ else: #works for both upper and lower and the combination of
             ceaser_string = ""
             for i in range(0, len(new_cstring)-1, 2):
                 char_code = new_cstring[i] + new_cstring[i+1]
-                ceaser_string += chr(int(char_code) + 22)
+                ceaser_string += chr(int(char_code) + 22) #this puts it back meaning that I'll have to sort my initial ascii range
 
     elif operator == "-" and 1 <= shift_num <=26:
         for char in ceaser_string:
