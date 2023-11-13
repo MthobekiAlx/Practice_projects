@@ -35,3 +35,42 @@ if ceaser_string.isupper():
 
 # Print the modified ceaser_string
 print("Modified ceaser_string:", ceaser_string)
+
+
+
+
+my else statement
+
+else: #works for both upper and lower and the combination of 
+    if operator == "+" and 1 <= shift_num <=26: #I will have to change the shift range back to 1-12 since it covers the entire range
+        for char in ceaser_string:
+            secret_cstring += str(ord(char) -22) #get a number that puts it back and shift it by max 12
+            num = secret_cstring
+            num = int(num)
+            if operator == "+" and 1 <= shift_num <= 26:
+                new_cstring_value = num + shift_num
+                new_cstring = new_cstring_value
+                new_cstring = str(new_cstring)
+
+            ceaser_string = ""
+            for i in range(0, len(new_cstring)-1, 2):
+                char_code = new_cstring[i] + new_cstring[i+1]
+                ceaser_string += chr(int(char_code) + 22) #this puts it back meaning that I'll have to sort my initial ascii range
+
+    elif operator == "-" and 1 <= shift_num <=26:
+        for char in ceaser_string:
+            secret_cstring += str(ord(char) - 22)
+            num = secret_cstring
+            num = int(num)
+            if operator == "-" and 1 <= shift_num <= 26:
+                new_cstring_value = num - shift_num
+                new_cstring = new_cstring_value
+                new_cstring = str(new_cstring)
+
+            ceaser_string = ""
+            for i in range(0, len(new_cstring)-1, 2):
+                char_code = new_cstring[i] + new_cstring[i+1]
+                ceaser_string += chr(int(char_code) + 22)
+
+    else:
+        print("Error input, try again")
