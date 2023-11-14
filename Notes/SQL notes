@@ -1,0 +1,27 @@
+         DATABASES
+-they are for persisting data somewhere, where the data does not die or stop and a solid database is ecpected to be\
+acid which duarantees #Atomicity# meaning the data is rarely affected by failure of transaction, #Consistency# making\
+rules and sticking to them or the traransaction fails otherwise, #Isolation# meaning being able to run two processes \
+at the same time and it being processed as if one was ran after the other one and #Durability# meaning that if unplugged \
+and booted back up there wont be a risk of data loss.
+
+          CONCEPTS
+          - CRUD which defines to
+             1. Create some data
+             2. Reasd some data
+             3. Update some data
+             4. Destroy some data
+        
+        Two kinds of databases
+            1. Relational databases
+            2. "NoSQL" databases
+
+ ---some terminology used in relational databases
+    1. lets say we wanna store users we will have to create a 'table' that is called users.
+    ---this user table will have 3 pieces of information i.e store their user 'id', 'login' and 'password' and are called 'columns'\ 
+    and they have types i.e 'id' type integer, 'login' type varchar(32) which translate to a string of variable length, but maximum 32\ 
+    and a string of exactly 32 characters, which is the case for all text encrypted with the md5 algorithm, for instance.
+         and this is how we would add a user
+               ------------ INSERT INTO users (login, password) VALUES ('rudy', '01234567890123456789012345678901'); 
+
+
