@@ -1,3 +1,4 @@
+"""
 # this are note to be used as refremce to solve all the problems that are in this tutorial
 
 #1-operations that can be carried out on a string of characters
@@ -50,7 +51,36 @@ if word.isupper():
     print("true")
 else:
     print("false")
+"""
+
+# fuctions notes
+"""
+ def assign_name():
+    name = "Doug"
+
+assign_name()
+
+print(name) # means that anythimg defined within a fuction is not available everywhere
 
 
 
 
+def change_name(name):
+    name = "Mark"
+
+name = "Tom"
+
+change_name(name) 
+
+print(name) # what was taken was the global name not the one defined in the fuction
+
+def change_name(name):
+    return "Mark"
+
+name = "Tom"
+
+name = change_name(name) 
+
+print(name) # one way to use the defined function
+
+"""
