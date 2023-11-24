@@ -1,0 +1,36 @@
+# notes for  bash scripting 
+
+--echo prints either to the screen or to a file name
+---- i.e ~$ echo Hello world # prints to the screen
+          while echo "hello world" >> hello.sh prints to the file
+          and chomd u+x --makes the file executable meaning you can run the file or script 
+          --using ./filename.sh
+---in a shell script we always use the shabang command which is 
+       #!/bin/bash --making it possible to run the file without psecifying that its a shell script
+       ---i.e a file hello.sh will look like
+                  - !#/bin/bash
+                   echo "Hello, Wolrd!"
+                   and to run it we will use ./hello.sh command after making it executable
+
+--pwd prints the current home directory
+
+--variables in bash are denoted by --- $variable_1, $variable2, .....
+     -- and ways to use such var are
+                                i.e vi users_name.sh
+                                    --- #!/bin/bash
+                                    First_name=Mthobeki
+                                    Last_name=Sikhosana
+                                    echo Hello $First_name $Last_name
+
+                                    and to make it interactive and ask for users input 
+                                    #!/bin/bash
+                                    echo what is your first name?
+                                    read First_name
+                                    echo What is your last name?
+                                    read Last_name
+                                    echo Hello $First_name $Last_name
+
+--
+
+
+
